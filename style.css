@@ -1,0 +1,115 @@
+.nav-bar{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  margin: 0 auto;
+  width: 100%;
+  background-color:darkorchid;
+
+}
+
+.nav-bar ul{
+  list-style-type: none;
+  text-align: center;
+}
+
+.nav-bar ul li{
+  display: inline-block;
+  padding: 20px;
+  height: 3%;
+  text-align: center;
+}
+
+.nav-bar ul li a {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.nav-bar ul li a:hover, nav ul li a:active{
+border-bottom:3px solid black;
+padding-bottom: 5px;
+
+}
+
+#pagewrap {
+margin-top: 30px;
+margin-bottom: 30px;
+margin-right: 150px;
+margin-left: 80px;
+padding-top: 50px;
+padding-right: 30px;
+padding-bottom: 50px;
+padding-left: 80px;
+display: flex;
+flex-wrap: wrap;
+text-align: center;
+justify-content: center;
+
+}
+.animation {
+display: inline;
+background-color: none;
+border: black, 50px;
+}
+
+body {
+  background-color: #4287f5;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+  grid-gap: 2rem;
+  margin: 2rem;
+}
+
+/* demo purposes only */
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+.card {
+  height: 215px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+h3 {
+  color: white;
+  font-size: 24px;
+  margin: 20px 0 0 20px;
+
+}
+
+p {
+  color: white;
+  font-weight: 400;
+  font-size: 16px;
+  align-self: end;
+  margin: 0 0 20px 20px;
+  letter-spacing: 0.5px;
+}
+
+img {
+  position: absolute;
+  top: 0;
+  height: 110%;
+  width: 100%;
+  z-index: -1;
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.card:hover {
+  transform: scale(1.035, 1.035);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+}
+
+.card:hover img {
+  transform: translateY(-10px);
+}
